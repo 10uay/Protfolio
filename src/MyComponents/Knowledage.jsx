@@ -15,7 +15,7 @@ export const Knowledage = (props) => {
   };
   return (
     <section className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container mx-auto max-w-lg">
+      <div className="container mx-auto max-w-[800px]">
         <div className="mb-12 text-center md:mb-18 lg:mb-20">
           <h2 className="mb-5 text-3xl font-bold md:mb-6 md:text-5xl lg:text-5xl">{heading}</h2>
           <p className="md:text-md">{description}</p>
@@ -82,8 +82,7 @@ export const KnowledageDefaults = {
     },
     {
       title: "Compatibility",
-      answer:
-        "Produced websites compatible with multiple browsers.",
+      answer: "Produced websites compatible with multiple browsers.",
     },
     {
       title: "RESTful APIs",
@@ -99,6 +98,11 @@ export const KnowledageDefaults = {
       title: "Node.js",
       answer:
         "Applied Node.js for server-side scripting, enabling asynchronous processing of requests and improving application responsiveness.",
+    },
+    {
+      title: "Display Data",
+      answer:
+        "Improved user experience by developing intuitive interfaces like charts.",
     },
   ],
   footerHeading: "Need A Service?",

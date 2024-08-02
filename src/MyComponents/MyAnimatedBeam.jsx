@@ -36,29 +36,29 @@ export function MyAnimatedBeam() {
       <div className="flex size-full flex-col max-w-lg max-h-[200px] items-stretch justify-between gap-10">
         <div className="flex flex-row items-center justify-between">
           <Circle ref={div1Ref}>
-            <img src="/public/git.png" alt="" />
+            <img src="/git.png" alt="" />
           </Circle>
           <Circle ref={div5Ref}>
-            <img src="/public/api.png" alt="" />
+            <img src="/api.png" alt="" />
           </Circle>
         </div>
         <div className="flex flex-row items-center justify-between">
           <Circle ref={div2Ref}>
-            <img src="/public/react.png" alt="reactjs" />
+            <img src="/react.png" alt="reactjs" />
           </Circle>
           <Circle ref={div4Ref} className="size-16">
-            <img src="/public/node-js.png" alt="nodejs" />
+            <img src="/node-js.png" alt="nodejs" />
           </Circle>
           <Circle ref={div6Ref}>
-            <img src="/public/express-js.png" alt="" />
+            <img src="/express-js.png" alt="" />
           </Circle>
         </div>
         <div className="flex flex-row items-center justify-between">
           <Circle ref={div3Ref}>
-            <img src="/public/mongo-db.png" alt="" />
+            <img src="/mongo-db.png" alt="" />
           </Circle>
           <Circle ref={div7Ref}>
-            <img src="/public/ux.png" alt="" />
+            <img src="/ux.png" alt="" />
           </Circle>
         </div>
       </div>

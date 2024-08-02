@@ -29,10 +29,10 @@ export const ProfileDefaults = {
   heading: "Front-End developer",
   description:
     "A front-end developer using React and Next technologies, with extensive knowledge of back-end development using NodeJS (ExpressJS) and (SQL and noSQL databases) technologies, in addition RestFull-APIs.",
-  image: {
-    src: "/public/",
-    alt: "personal photo",
-  },
+  // image: {
+  //   src: "/public/",
+  //   alt: "personal photo",
+  // },
 };
 
 Profile.displayName = "Profile";

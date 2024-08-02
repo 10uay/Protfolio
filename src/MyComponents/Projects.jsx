@@ -65,7 +65,9 @@ const FeatureCard = ({ isActive, setIsActive, ...feature }) => {
         <h2 className="hidden [writing-mode:vertical-rl] lg:mx-auto lg:block lg:rotate-180 lg:text-2xl lg:font-bold">
           {feature.verticalText}
         </h2>
-        <p className="text-xl font-bold md:text-2xl lg:hidden">{feature.horizontalText}</p>
+        <p className="text-xl font-bold md:text-2xl lg:hidden">
+          {feature.horizontalText}
+        </p>
       </div>
       <CardContent
         className="w-full overflow-hidden lg:h-full lg:w-auto lg:min-w-[200vw] lg:overflow-auto"
@@ -80,11 +82,13 @@ const FeatureCard = ({ isActive, setIsActive, ...feature }) => {
             {feature.heading}
           </h3>
           <p className="md:text-md">{feature.description}</p>
-          <Button variant="outline" className='w-fit mx-auto mt-4'>
-            <a href={feature.link} target="_blank">Check</a>
-            <ChevronRight className="h-4 w-4" />
-          </Button>
-          
+          <a href={feature.link} target="_blank">
+            <Button variant="outline" className="w-fit mx-auto mt-4">
+              Check
+              <ChevronRight className="h-4 w-4" />
+            </Button>
+          </a>
+
           <div className="mt-8  md:mt-10 md:h-[25rem] lg:mt-12 bg-fit">
             <img
               src={feature.image.src}
@@ -102,7 +106,8 @@ const FeatureCard = ({ isActive, setIsActive, ...feature }) => {
 export const ProjectsDefaults = {
   tagline: "Projects",
   heading: "The last three projects I have implemented so far",
-  description: "You can view the details of each projects on GitHub or via the link to each project separately on the web.",
+  description:
+    "You can view the details of each projects on GitHub or via the link to each project separately on the web.",
 
   features: [
     {
@@ -113,10 +118,10 @@ export const ProjectsDefaults = {
       description:
         "Where you can view the financial analyses of companies over the past ten years, with charts that explain the tables in a professional manner.",
       image: {
-        src: "/public/finrep.png",
+        src: "/finrep.png",
         alt: "Financial analysis website",
       },
-      link: "#"
+      link: "#",
     },
     {
       columnText: "02",
@@ -126,11 +131,10 @@ export const ProjectsDefaults = {
       description:
         "A simple but visually rich landing page with lots of professional animation.",
       image: {
-        src: "/public/mark.png",
+        src: "/mark.png",
         alt: "Landing page",
       },
-      link: "https://mark-louay.vercel.app/"
-
+      link: "https://mark-louay.vercel.app/",
     },
     {
       columnText: "03",
@@ -140,11 +144,10 @@ export const ProjectsDefaults = {
       description:
         "An interactive blog for articles with many features such as comments and others, with a special page for the owner to control the smallest details.",
       image: {
-        src: "/public/blog.png",
+        src: "/blog.png",
         alt: "Blog",
       },
-      link: "https://github.com/10uay/blog.git"
-
+      link: "https://blog-louay-05.vercel.app/",
     },
   ],
 };
